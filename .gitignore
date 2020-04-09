@@ -1,0 +1,39 @@
+/log
+
+# Mac
+.DS_Store
+
+# Editor
+*.swp
+.vscode
+
+# NodeJS
+node_modules
+npm-debug.log*
+
+# Compile
+dist
+views/index.*.html
+
+# Tmp
+/database
+tworkspace
+src/utils/case-for-run.ts
+packge-lock.json
+.env
+
+# Node
+# Error Log
+yarn-error.log
+
+# Complie
+/lib
+/es
+
+# Lock File
+package-lock.json
+yarn.lock
+
+# Test
+coverage
+.nyc_output

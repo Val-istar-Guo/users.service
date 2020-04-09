@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es6",
+    "strict": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": "./",
+    "noEmitOnError": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@root/*": ["./*"]
+    },
+    "plugins": [
+      { "transform": "typescript-nestjs-swagger-plugin", "introspectComments": true },
+      { "transform": "typescript-transform-paths" },
+    ]
+  },
+  "exclude": ["node_modules"],
+  "files": ["index.ts"],
+  "include": ["src/**/*.ts"]
+}
